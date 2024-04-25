@@ -1,0 +1,20 @@
+
+.ContentBocx {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.ContentBocx:hover {
+    border-color: #1eb2a6; /* Border color on hover */
+    box-shadow: 0 0 10px #1eb2a6; /* Shadow on hover */
+    transform: scale(1.1); /* Scale on hover */
+}
+
+
+.ContentBocxButton{
+    align-items: center;
+    width: 10vw;
+    font-weight: 750;
+    font-size: 26px;
+    padding: -12px;
+    margin-left: 7vw;
+}

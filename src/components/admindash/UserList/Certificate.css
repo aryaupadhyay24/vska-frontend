@@ -1,0 +1,26 @@
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three certificates per row */
+    gap: 20px; /* Adjust spacing between certificates */
+    /* flex-wrap: wrap; */
+  }
+  
+  .certificate-item {
+
+    font-size: 15px;
+    width: 25vw;
+    word-wrap: break-word;
+    border-radius: 5px;
+    box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+    padding-left: 8px;
+
+  }
+  .certificate-item:hover{
+    scale: 1.04;
+    transition: scale 0.7s linear 0.2s;
+    transition-delay: 0.1s;
+    color: #048c8a;
+   
+}
+  
+  
