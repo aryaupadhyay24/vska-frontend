@@ -7,7 +7,7 @@ import Certificate from "./Certificate";
 
 const UserDetail = () => {
     const { email } = useParams();
-    let apiurl = `http://localhost:80/api/user/details/${email}`;
+    let apiurl = `https://vska-backend-2.onrender.com/api/user/details/${email}`;
     console.log(apiurl)
     const [data, setData] = useState([])
 
@@ -44,7 +44,7 @@ const UserDetail = () => {
     const handleSubmit = async () => {
         try {
             console.log(certificateID, courseName, teacher, certificateLink, email)
-            const response = await fetch('http://localhost:80/api/create/certificate', {
+            const response = await fetch('https://vska-backend-2.onrender.com/create/certificate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ const UserDetail = () => {
     const fetchdata = async () => {
         try {
             console.log(certificateID, courseName, teacher, certificateLink, email)
-            const response = await fetch(`http://localhost:80/api/user/details/${email}`, {
+            const response = await fetch(`https://vska-backend-2.onrender.com/user/details/${email}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'

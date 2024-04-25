@@ -7,7 +7,7 @@ import "./style.css"
 
 function UpcomingBatches() {
   const [data, setData] = useState([])
-  let apiurl = "http://localhost:80/api/courses";
+  let apiurl = "https://vska-backend-2.onrender.com/api/courses";
   // setloading(true)
 
   const fetchdata = () => {

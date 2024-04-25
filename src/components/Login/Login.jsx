@@ -15,7 +15,11 @@ function Login() {
     event.preventDefault();
     setIsLoading(true);
     try {
-      const res = await axios.post("http://localhost:80/api/login", { email, password });
+      const res = await axios.post("https://vska-backend-2.onrender.com/api/login", { email, password });
+
+
+
+      
       console.log(res.data.authToken);
       // setUser(data.user);
       localStorage.setItem("token", res.data.authToken);

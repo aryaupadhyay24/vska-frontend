@@ -6,7 +6,7 @@ import CardOnCard from './CardOnCard'
 
 const UserCard = () => {
     const [data,setData]=useState([])
-    let apiurl="http://localhost:80/api/fetchAllUser";
+    let apiurl="https://vska-backend-2.onrender.com/api/fetchAllUser";
     // setloading(true)
     
     const fetchdata=()=>{

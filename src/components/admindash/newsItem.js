@@ -11,7 +11,7 @@ const NewsItem = () => {
     // const data=UserList
     // const [countpage,setCount]=useState(1)
     // const [loading,setloading]=useState(false)
-    let apiurl="http://localhost:80/api/fetchAllUser";
+    let apiurl="https://vska-backend-2.onrender.com/api/fetchAllUser";
     // setloading(true)
     
     const fetchdata=()=>{
